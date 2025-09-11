@@ -1,0 +1,93 @@
+# ---------------------
+# Python
+# ---------------------
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+*.pyo
+*.pyd
+.env
+.venv
+env/
+venv/
+ENV/
+.ipynb_checkpoints
+.DS_Store
+
+# ---------------------
+# IDE / Editors
+# ---------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---------------------
+# Logs / Outputs
+# ---------------------
+logs/
+predictions
+*.out
+*.err
+output/
+outputs/
+checkpoints/
+runs/
+wandb/
+tensorboard/
+events.out.tfevents*
+
+
+# ---------------------
+# Hugging Face / Transformers
+# ---------------------
+cache/
+datasets/
+*.lock
+*.jsonl
+*.arrow
+**/adapter_model/
+**/adapters/
+**/trainer_state.json
+**/training_args.bin
+**/optimizer.pt
+**/scheduler.pt
+**/pytorch_model.bin
+**/pytorch_model.fp16.bin
+**/pytorch_model.bin.index.json
+**/pytorch_model.safetensors
+**/pytorch_model.safetensors.index.json
+**/model.safetensors
+**/tokenizer.json
+**/tokenizer_config.json
+**/special_tokens_map.json
+**/generation_config.json
+
+# ---------------------
+# PyTorch / DeepSpeed / Accelerate
+# ---------------------
+*.pt
+*.bin
+*.ckpt
+*.safetensors
+zero_*
+stage_*
+*.ds
+deepspeed_log.txt
+accelerate_state.json
+
+
+# ---------------------
+# Data
+# ---------------------
+data/
+datasets/
+*.h5
+*.npy
+*.npz
+*.csv
+*.tsv
+*.parquet
+*.pkl
+*.pickle
