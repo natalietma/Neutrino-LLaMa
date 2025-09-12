@@ -1,0 +1,14 @@
+ConfigArgParse==1.7
+h5py==3.12.1
+numpy==1.26.4
+tqdm==4.67.1
+uproot3==3.14.4
+torch==2.5.1
+torchvision==0.20.1
+matplotlib==3.10.0
+opencv-python==4.11.0
+pandas==2.3.3
+scikit-learn==1.6.1
+seaborn==0.13.2
+ray==2.41.0
+ray[train]
