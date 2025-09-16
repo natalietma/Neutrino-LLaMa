@@ -3,7 +3,6 @@ transformers==4.46.2
 datasets
 peft==0.13.0
 trl
-accelerate
 scikit-learn
 tqdm
 pillow
