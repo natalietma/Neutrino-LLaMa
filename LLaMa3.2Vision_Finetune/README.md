@@ -9,7 +9,7 @@ Connect to the server with your password:
 
 ```bash id="366xgx"
 ssh username@tau-neutrino.ps.uci.edu
-
+'''bash
 If you don’t have an account on Tau server, please contact Jiaxi Liu.
 
 *Note: Be sure your password is safe and correct. Your account will be locked when you input wrong password twice. You are not entitled to run at root or sudo.*
