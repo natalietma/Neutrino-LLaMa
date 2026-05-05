@@ -2,6 +2,12 @@
 
 This repository contains the code to fine-tune **LLaMA 3.2-11B Vision-Instruct** on simulated DUNE neutrino pixel maps.
 
+## Connect to Group Server
+To connect the group server, you must be either on campus with UCI network, or use UCI VPN to connect to the server. More info about UCI VPN: https://www.oit.uci.edu/services/security/vpn/
+Connect to the server with your initial password: $ssh you@tau-neutrino.ps.uci.edu
+If you don’t have an account on Tau server, please contact Jiaxi Liu.
+*Note: Be sure your password is safe and correct. Your account will be locked when you input wrong password twice. You are not entitled to run at root or sudo.*
+
 ## Dataset
 - Input: pairs of **2D pixel maps** in `xz` and `yz` planes
 - Classes: `NuE CC`, `NuMu CC`, `Neutral Current`
