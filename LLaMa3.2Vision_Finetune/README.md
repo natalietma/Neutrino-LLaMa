@@ -54,21 +54,21 @@ Create and activate the conda environment:
 Install the required Python packages:
 `pip install -r requirements.txt`
 
-**Environment**
+## Environment
 
-Python 3.10.20
+The following inference environment was tested:
 
-torch: 2.4.1+cu121(PyTorch 2.4.1 build with CUDA 12.1)
+- Python `3.10.20`
+- PyTorch `2.4.1+cu121`
+- torchvision `0.19.1+cu121`
+- transformers `4.46.2`
+- peft `0.13.0`
+- accelerate `1.13.0`
+- Pillow `12.2.0`
 
-torchvision 0.19.1+cu121
-
-transformers 4.46.2
-
-peft 0.13.0
-
-accelerate 1.13.0
-
-Pillow 12.2.0
+**Notes**
+- `qwen_vl_utils` was available in the tested environment.
+- `+cu121` indicates the CUDA 12.1 build of PyTorch / torchvision.
 
 *This setup documents the environment used for inference. The original training environment may differ.*
 
