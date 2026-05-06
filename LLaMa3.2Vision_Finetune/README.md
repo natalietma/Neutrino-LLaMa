@@ -56,8 +56,6 @@ Install the required Python packages:
 
 ## Environment
 
-The following inference environment was tested:
-
 - Python `3.10.20`
 - PyTorch `2.4.1+cu121`
 - torchvision `0.19.1+cu121`
@@ -70,7 +68,7 @@ The following inference environment was tested:
 - `qwen_vl_utils` was available in the tested environment.
 - `+cu121` indicates the CUDA 12.1 build of PyTorch / torchvision.
 
-*This setup documents the environment used for inference. The original training environment may differ.*
+*This setup documents the environment used for inference. The training environment may differ.*
 
 ## Finetune LLaMa 3.2 Vision
 
