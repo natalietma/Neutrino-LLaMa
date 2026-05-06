@@ -49,10 +49,16 @@ We recommend using [conda](https://docs.conda.io/) to create the Python environm
 Create and activate the conda environment:
 
 `conda create -n llm python=3.10`
+
 `conda activate llm`
 
 Install the required Python packages:
 `pip install -r requirements.txt`
+
+To match with specific dependency version:
+`pip install dependency==version` 
+
+For example: `pip install transformers==4.46.2` 
 
 ## Environment
 
