@@ -14,16 +14,22 @@ If you don’t have an account on Tau server, please contact Jiaxi Liu.
 ## Obtain the codebase
 Clone the repository onto the server:
 git clone `git clone https://github.com/natalietma/Neutrino-LLaMa.git`
+
 You will need your github username and a github token for the "password"
+
 Your github token can be found under Settings → Developer settings → Personal access tokens → Tokens (classic).
 
 ## Dataset
-The dataset is a custom simulation of a modular LArTPC with square 5 mm pixel-based readout. 
+The dataset is a custom simulation of a modular liquid Argon time projection chamber (LArTPC) with square 5 mm pixel-based readout. 
 
-- Input: pairs of **2D pixel maps** in `xz` and `yz` planes
-- Classes: `NuE CC`, `NuMu CC`, `Neutral Current`
+- Input: pairs of **2D pixel maps** in the `xz` and `yz` planes  
+- Classes: `NuE CC`, `NuMu CC`, `Neutral Current`  
 
-<b>Note:</b> Raw event h5py files were converted to .png after event crops and corresponding pid.txt files were generated. Data available on reasonable request.
+**Dataset location used in this tutorial**  
+The inference examples in this tutorial use the dataset at:
+
+```bash
+/mnt/ironwolf_20t/users/dikshans/preprocessed_NewDataset/asImages
 
 ## Setup
 We recommend using [conda](https://docs.conda.io/) for environment setup.  
