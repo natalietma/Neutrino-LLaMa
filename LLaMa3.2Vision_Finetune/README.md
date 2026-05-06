@@ -44,12 +44,12 @@ Replace /path/to/local/asImages/ with your target directory on the destination m
 ## Setup
 We recommend using [conda](https://docs.conda.io/) to create the Python environment for inference.
 
-‘cd Neutrino-LLaMa/LLaMa3.2Vision_Finetune’
+`cd Neutrino-LLaMa/LLaMa3.2Vision_Finetune`
 
 Create and activate the conda environment:
 
-‘conda create -n llm python=3.10’
-‘conda activate llm’
+`conda create -n llm python=3.10`
+`conda activate llm`
 
 Install the required Python packages:
 `pip install -r requirements.txt`
@@ -57,11 +57,17 @@ Install the required Python packages:
 **Environment**
 
 Python 3.10.20
-torch 2.4.1+cu121
+
+torch: 2.4.1+cu121(PyTorch 2.4.1 build with CUDA 12.1)
+
 torchvision 0.19.1+cu121
+
 transformers 4.46.2
+
 peft 0.13.0
+
 accelerate 1.13.0
+
 Pillow 12.2.0
 
 *This setup documents the environment used for inference. The original training environment may differ.*
