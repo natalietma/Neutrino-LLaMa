@@ -38,11 +38,9 @@ Each event is stored in its own subdirectory and includes:
 
 Note: The raw HDF5 event files were preprocessed into cropped .png pixel maps, and the corresponding pid.txt label files were generated during preprocessing.
 
-If the dataset is not already available on your server, you can copy it with rsync:
+If the dataset is not already available on your server, you can copy it with rsync: `rsync -avP username@tau-neutrino.ps.uci.edu:/mnt/ironwolf_20t/users/dikshans/preprocessed_NewDataset/asImages/ /path/to/local/asImages/`
 
-rsync -avP username@source-server:/mnt/ironwolf_20t/users/dikshans/preprocessed_NewDataset/asImages/ /path/to/local/asImages/
-
-Replace username@source-server with the appropriate login and /path/to/local/asImages/ with your target directory on the destination machine.
+Replace username@tau-neutrino.ps.uci.edu with the appropriate login and /path/to/local/asImages/ with your target directory on the destination machine.
 
 ## Setup
 We recommend using [conda](https://docs.conda.io/) for environment setup.  
