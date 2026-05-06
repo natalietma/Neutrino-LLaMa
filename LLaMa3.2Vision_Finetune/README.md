@@ -6,8 +6,8 @@ This repository contains the code to fine-tune **LLaMA 3.2-11B Vision-Instruct**
 To connect the group server, you must be either on campus with UCI network, or use UCI VPN to connect to the server. More info about UCI VPN: https://www.oit.uci.edu/services/security/vpn/
 
 Run `ssh username@tau-neutrino.ps.uci.edu` to connect to the server.
-
-If you don’t have an account on Tau server, please contact Jiaxi Liu.
+*Replace username with your own username set for this server.
+If you don’t have an account on Tau server, please contact Jiaxi Liu.*
 
 *Note: Be sure your password is safe and correct. Your account will be locked when you input wrong password twice. You are not entitled to run at root or sudo.*
 
@@ -25,9 +25,7 @@ The dataset is a custom simulation of a modular liquid Argon time projection cha
 - Input: pairs of **2D pixel maps** in the `xz` and `yz` planes  
 - Classes: `NuE CC`, `NuMu CC`, `Neutral Current`  
 
-**Dataset location used in this tutorial**  
-The inference examples in this tutorial use the dataset at:
-
+Dataset location used in this tutorial is at:
 `/mnt/ironwolf_20t/users/dikshans/preprocessed_NewDataset/asImages`
 
 Each event is stored in its own subdirectory and includes:
@@ -40,7 +38,7 @@ Note: The raw HDF5 event files were preprocessed into cropped .png pixel maps, a
 
 If the dataset is not already available on your server, you can copy it with rsync: `rsync -avP username@tau-neutrino.ps.uci.edu:/mnt/ironwolf_20t/users/dikshans/preprocessed_NewDataset/asImages/ /path/to/local/asImages/`
 
-Replace username@tau-neutrino.ps.uci.edu with the appropriate login and /path/to/local/asImages/ with your target directory on the destination machine.
+Replace /path/to/local/asImages/ with your target directory on the destination machine.
 
 ## Setup
 We recommend using [conda](https://docs.conda.io/) for environment setup.  
