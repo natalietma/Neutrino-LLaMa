@@ -11,6 +11,12 @@ If you don’t have an account on Tau server, please contact Jiaxi Liu.
 
 *Note: Be sure your password is safe and correct. Your account will be locked when you input wrong password twice. You are not entitled to run at root or sudo.*
 
+## Obtain the codebase
+Clone the repository onto the server:
+git clone `git clone https://github.com/natalietma/Neutrino-LLaMa.git`
+You will need your github username and a github token for the "password"
+Your github token can be found under Settings → Developer settings → Personal access tokens → Tokens (classic).
+
 ## Dataset
 The dataset is a custom simulation of a modular LArTPC with square 5 mm pixel-based readout. 
 
