@@ -137,13 +137,13 @@ Then run inference, for example on GPUs 0 and 1:
 
 After inference is complete, the prediction logs can be analyzed in Jupyter Notebook to generate confusion matrices, ROC curves, and accuracy plots. Jupyter is recommended here for convenience, since it makes it easier to inspect outputs and iterate on plotting code interactively.
 
-**Start Jupyter on the remote server**
+**Start Jupyter on the server**
 
 First, activate conda environment.
 Then start a notebook server on the remote machine: `jupyter notebook --no-browser --port=8889`
 This will print a local URL containing a token, for example: http://localhost:8889/?token=
 
-**Connect from your local machine**
+**Connect from your local device**
 
 On your local machine, open a new terminal and create SSH port forwarding:`ssh -L 8890:localhost:8889 username@tau-neutrino.ps.uci.edu` Then open the following address in your local browser: `http://localhost:8890/?token=...` Use the token printed by the remote Jupyter server.
 
