@@ -78,6 +78,19 @@ If the dataset is not already available on your server, you can copy it with rsy
 
 Replace /path/to/local/asImages/ with your target directory on the destination machine.
 
+## Hugging Face access
+
+This project uses the base model `meta-llama/Llama-3.2-11B-Vision-Instruct`, which requires Hugging Face access approval.
+
+Before running inference:
+1. Create a Hugging Face account if needed.
+2. Request access to the model page and accept the license terms.
+3. Log in on the server with your Hugging Face user access token:
+
+```bash
+hf auth login
+```
+
 ## Run Inference with Finetuned LLaMa 3.2 Vision
 
 **1. Activate the environment** `conda activate llm`
@@ -99,8 +112,8 @@ Before running inference, verify the following paths in `inference.py`:
 
 ```python
 MODEL_ID = "meta-llama/Llama-3.2-11B-Vision-Instruct"
-ADAPTER_PATH = "./checkpoints/Llama3.2-11B-Vision-Instruct-Neutrino"
-DATASET_ROOT = "../data"
+ADAPTER_PATH = "/mnt/ironwolf_12t/users/shared_llama_adapters/Llama3.2-11B-Vision-Instruct-Neutrino"
+DATASET_ROOT = "/mnt/ironwolf_20t/users/dikshans/preprocessed_NewDataset/asImages"
 ```
 
 MODEL_ID should point to the base vision-language model.
