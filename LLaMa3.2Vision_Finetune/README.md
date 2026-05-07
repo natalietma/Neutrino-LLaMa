@@ -69,14 +69,7 @@ The dataset is a custom simulation of a modular liquid Argon time projection cha
 - Input: pairs of **2D pixel maps** in the `xz` and `yz` planes  
 - Classes: `NuE CC`, `NuMu CC`, `Neutral Current`  
 
-Dataset location used in this tutorial is at:
-`/mnt/ironwolf_20t/users/dikshans/preprocessed_NewDataset/asImages`
-
-Note: The raw HDF5 event files were preprocessed into cropped .png pixel maps, and the corresponding pid.txt label files were generated during preprocessing.
-
-If the dataset is not already available on your server, you can copy it with rsync: `rsync -avP username@tau-neutrino.ps.uci.edu:/mnt/ironwolf_20t/users/dikshans/preprocessed_NewDataset/asImages/ /path/to/local/asImages/`
-
-Replace /path/to/local/asImages/ with your target directory on the destination machine.
+Note: The raw HDF5 event files were preprocessed into cropped .png pixel maps, and the corresponding pid.txt label files were generated during preprocessing. 
 
 ## Hugging Face access
 
@@ -142,3 +135,22 @@ Then run inference, for example on GPUs 0 and 1:
 
 `CUDA_VISIBLE_DEVICES=0,1 python inference.py | tee inference_output.out`
 
+#### Visualize results in Jupyter
+
+After inference is complete, the prediction logs can be analyzed in Jupyter Notebook to generate confusion matrices, ROC curves, and accuracy plots. Jupyter is recommended here for convenience, since it makes it easier to inspect outputs and iterate on plotting code interactively.
+
+**Start Jupyter on the remote server**
+
+First, activate the environment:
+
+```bash
+conda activate llm
+```
+Start a notebook server on the remote machine: `jupyter notebook --no-browser --port=8889`
+This will print a local URL containing a token, for example: 'http://localhost:8889/?token=...'
+
+**Connect from your local machine**
+
+On your local machine, open a new terminal and create SSH port forwarding:`ssh -L 8890:localhost:8889 username@tau-neutrino.ps.uci.edu` Then open the following address in your local browser: `http://localhost:8890/?token=...` Use the token printed by the remote Jupyter server.
+
+**Typical useful plots can be found under "plots".**
