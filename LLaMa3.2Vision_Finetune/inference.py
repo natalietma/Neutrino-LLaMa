@@ -14,7 +14,7 @@ SYSTEM_MESSAGE = '''You are a neutrino physicist who is working with Fermilab De
                     For NuMu CC the muon track is usually longer and narrow, and for Neutral Current there is no significant muon track or electron shower.'''
 
 MODEL_ID = "meta-llama/Llama-3.2-11B-Vision-Instruct"
-ADAPTER_PATH = "./checkpoints/Llama3.2-11B-Vision-Instruct-Neutrino"
+ADAPTER_PATH = "/mnt/ironwolf_12t/users/shared_llama_adapters/Llama3.2-11B-Vision-Instruct-Neutrino"
 DATASET_ROOT = "../data" #`"/baldig/physicsprojects2/dikshans/datasets/bigDataset"
 LOG_FILE = "./predictions/finetune_predictions.log"
 
