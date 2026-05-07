@@ -153,4 +153,4 @@ This will print a local URL containing a token, for example: http://localhost:88
 
 On your local machine, open a new terminal and create SSH port forwarding:`ssh -L 8890:localhost:8889 username@tau-neutrino.ps.uci.edu` Then open the following address in your local browser: `http://localhost:8890/?token=...` Use the token printed by the remote Jupyter server.
 
-**Typical useful plots can be found under "plots".**
+*Typical useful plots can be found under "plots" folder.*
