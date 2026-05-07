@@ -15,7 +15,7 @@ SYSTEM_MESSAGE = '''You are a neutrino physicist who is working with Fermilab De
 
 MODEL_ID = "meta-llama/Llama-3.2-11B-Vision-Instruct"
 ADAPTER_PATH = "/mnt/ironwolf_12t/users/shared_llama_adapters/Llama3.2-11B-Vision-Instruct-Neutrino"
-DATASET_ROOT = "../data" #`"/baldig/physicsprojects2/dikshans/datasets/bigDataset"
+DATASET_ROOT = "../data" #"/mnt/ironwolf_20t/users/dikshans/preprocessed_NewDataset/asImages"
 LOG_FILE = "./predictions/finetune_predictions.log"
 
 CLASSES = {"nuecc": "NuE CC", "numucc": "NuMu CC", "nc": "Neutral Current"}
