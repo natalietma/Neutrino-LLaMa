@@ -147,7 +147,7 @@ First, activate the environment:
 conda activate llm
 ```
 Start a notebook server on the remote machine: `jupyter notebook --no-browser --port=8889`
-This will print a local URL containing a token, for example: 'http://localhost:8889/?token=...'
+This will print a local URL containing a token, for example: http://localhost:8889/?token=
 
 **Connect from your local machine**
 
