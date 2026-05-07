@@ -35,9 +35,10 @@ We recommend using [conda](https://docs.conda.io/) to create the Python environm
 
 Create and activate the conda environment:
 
-`conda create -n llm python=3.10`
+```conda create -n llm python=3.10
 
-`conda activate llm`
+conda activate llm
+```
 
 ## Environment
 
