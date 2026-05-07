@@ -135,7 +135,7 @@ Then run inference, for example on GPUs 0 and 1:
 
 `CUDA_VISIBLE_DEVICES=0,1 python inference.py | tee inference_output.out`
 
-#### Visualize results in Jupyter
+## Visualize results in Jupyter
 
 After inference is complete, the prediction logs can be analyzed in Jupyter Notebook to generate confusion matrices, ROC curves, and accuracy plots. Jupyter is recommended here for convenience, since it makes it easier to inspect outputs and iterate on plotting code interactively.
 
