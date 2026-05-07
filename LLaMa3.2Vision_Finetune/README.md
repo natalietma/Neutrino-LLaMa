@@ -80,12 +80,9 @@ Replace /path/to/local/asImages/ with your target directory on the destination m
 
 ## Run Inference with Finetuned LLaMa 3.2 Vision
 
-**1. Activate the environment**
-
-`conda activate llm`
+**1. Activate the environment** `conda activate llm`
 
 **2. Check GPU availability**
-
 
 Before launching inference, verify that the target GPUs are visible and have sufficient free memory: `nvidia-smi`
 
