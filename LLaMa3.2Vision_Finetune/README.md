@@ -139,12 +139,8 @@ After inference is complete, the prediction logs can be analyzed in Jupyter Note
 
 **Start Jupyter on the remote server**
 
-First, activate the environment:
-
-```bash
-conda activate llm
-```
-Start a notebook server on the remote machine: `jupyter notebook --no-browser --port=8889`
+First, activate conda environment.
+Then start a notebook server on the remote machine: `jupyter notebook --no-browser --port=8889`
 This will print a local URL containing a token, for example: http://localhost:8889/?token=
 
 **Connect from your local machine**
